@@ -1,0 +1,25 @@
+{
+	"version": "a_nice_version",
+	"server": {
+		"host": "localhost",
+		"port": 4711
+	},
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-std=c++14",
+				"curl_tutorial.cpp",
+				"-o",
+				"curl_tutorial",
+				"-lcurl"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

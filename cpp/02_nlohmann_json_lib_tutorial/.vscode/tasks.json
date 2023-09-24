@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-std=c++14",
+				"curl_tutorial.cpp",
+				"-o",
+				"curl_tutorial",
+				"-lcurl", // Add this line to link the curl library
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
