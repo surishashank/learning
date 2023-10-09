@@ -1,7 +1,9 @@
 # Compiler
 CXX := g++
 # Compiler flags
-CXXFLAGS := -std=c++17
+# CXXFLAGS := -std=c++20 -I/System/Volumes/Data/opt/homebrew/Cellar/boost/1.82.0_1/include/boost -I/System/Volumes/Data/opt/homebrew/Cellar/boost/1.82.0_1/include
+CXXFLAGS := -std=c++20 -I/System/Volumes/Data/opt/homebrew/Cellar/boost/1.82.0_1/include/
+
 # Name of the executable
 TARGET := get_order_book
 # Directory containing source files
